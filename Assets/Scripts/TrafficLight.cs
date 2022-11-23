@@ -5,6 +5,11 @@ using UnityEngine;
 public class TrafficLight : MonoBehaviour
 {
     [SerializeField] int _status;
+    /*For all the arrays there is the following order:
+     * 0: Green
+     * 1: Yellow
+     * 3: Red
+    */
     [SerializeField] GameObject[] _lightsSuperior;
     [SerializeField] GameObject[] _lightsInferior;
     [SerializeField] Material[] _lightMaterialsON;
@@ -20,14 +25,23 @@ public class TrafficLight : MonoBehaviour
     {
         for(int i = 0; i < 3; i++)
         {
-            if(i == lightNumber)
+            Renderer rendererUp = _lightsSuperior[i].GetComponent<Renderer>();
+            Renderer rendererDown = _lightsInferior[i].GetComponent<Renderer>();
+            GameObject lightingUp = _lightsSuperior[i].transform.GetChild(0).gameObject;
+            GameObject lightingDown = _lightsInferior[i].transform.GetChild(0).gameObject;
+            if (i == lightNumber)
             {
-                _lightsSuperior[i].GetComponent<Renderer>().material = _lightMaterialsON[i];
-                _lightsInferior[i].GetComponent<Renderer>().material = _lightMaterialsON[i];
+                rendererUp.material = _lightMaterialsON[i];
+                rendererDown.material = _lightMaterialsON[i];
+                lightingUp.SetActive(true);
+                lightingDown.SetActive(true);
+
             } else
             {
-                _lightsSuperior[i].GetComponent<Renderer>().material = _lightMaterialsOFF[i];
-                _lightsInferior[i].GetComponent<Renderer>().material = _lightMaterialsOFF[i];
+                rendererUp.material = _lightMaterialsOFF[i];
+                rendererDown.material = _lightMaterialsOFF[i];
+                lightingUp.SetActive(false);
+                lightingDown.SetActive(false);
             }
         }
     }
