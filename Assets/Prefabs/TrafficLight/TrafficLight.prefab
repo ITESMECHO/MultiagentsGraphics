@@ -6688,7 +6688,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8441600577249995163}
-  - component: {fileID: 8441600577249995162}
   m_Layer: 0
   m_Name: TrafficLight
   m_TagString: Untagged
@@ -6711,35 +6710,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8441600577249995162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8441600577249995160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 743c81d9fc3f22945931d432fd92197b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _status: 0
-  _lightsSuperior:
-  - {fileID: 535515704012014610}
-  - {fileID: 795901280824680607}
-  - {fileID: 1079281226531847795}
-  _lightsInferior:
-  - {fileID: 270693818103730591}
-  - {fileID: 5679082669879921541}
-  - {fileID: 2309905701290737815}
-  _lightMaterialsON:
-  - {fileID: 2100000, guid: cfaff5c72419f6b45806b58e60325915, type: 2}
-  - {fileID: 2100000, guid: f82aa52db26c5694ca1de54b4d604d68, type: 2}
-  - {fileID: 2100000, guid: 93a060b811a16a846a8d98862a6eacf0, type: 2}
-  _lightMaterialsOFF:
-  - {fileID: 2100000, guid: b6ff1228666dfd34a92f73e9396e97bf, type: 2}
-  - {fileID: 2100000, guid: a4caf7d9da1a7c84b9b3812edb030ab5, type: 2}
-  - {fileID: 2100000, guid: f0c5a0f34ef86464a943971f60a08b99, type: 2}
 --- !u!1 &8465586044905776113
 GameObject:
   m_ObjectHideFlags: 0
