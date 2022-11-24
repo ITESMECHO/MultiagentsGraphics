@@ -28,7 +28,7 @@ public class Simulation : MonoBehaviour
         int count = 0;
         while (count < _stepsData.steps.Length)
         {
-            Debug.Log(count);
+            // Debug.Log(count);
             currentStep = _stepsData.steps[count];
             yield return new WaitForSeconds(_stepRate);
             count++;
