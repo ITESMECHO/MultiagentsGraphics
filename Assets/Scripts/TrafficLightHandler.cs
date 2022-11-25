@@ -15,13 +15,7 @@ public class TrafficLightHandler : MonoBehaviour
     [SerializeField] Material[] _lightMaterialsON;
     [SerializeField] Material[] _lightMaterialsOFF;
 
-
-    void Update()
-    {
-        On(_status);
-    }
-
-    void On(int lightNumber)
+    public void On(int lightNumber)
     {
         for(int i = 0; i < 3; i++)
         {
