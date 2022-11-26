@@ -10,6 +10,7 @@ public class CameraManager : MonoBehaviour
 
     void Start()
     {
+        UpdateCam();
         _lastSelection = _selection;
     }
     void Update()
@@ -32,7 +33,6 @@ public class CameraManager : MonoBehaviour
 
     void UpdateCam()
     {
-        print("updated");
         int current = Mathf.Abs(_selection) % _cams.Length;
         for (int i = 0; i < _cams.Length; i++)
         {
