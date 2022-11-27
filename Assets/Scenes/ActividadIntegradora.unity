@@ -16477,7 +16477,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.8207547, g: 0.7074484, b: 0.6078231, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.51
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -28188,18 +28188,6 @@ PrefabInstance:
       value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7029731502515178876, guid: 1325f4d1ef31e564698bb4bdb22780e1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.20000057
-      objectReference: {fileID: 0}
-    - target: {fileID: 7029731502515178876, guid: 1325f4d1ef31e564698bb4bdb22780e1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7029731502515178876, guid: 1325f4d1ef31e564698bb4bdb22780e1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.20000055
-      objectReference: {fileID: 0}
-    - target: {fileID: 7029731502515178876, guid: 1325f4d1ef31e564698bb4bdb22780e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.85
       objectReference: {fileID: 0}
@@ -28242,10 +28230,6 @@ PrefabInstance:
     - target: {fileID: 7693642549830490054, guid: 1325f4d1ef31e564698bb4bdb22780e1, type: 3}
       propertyPath: m_Name
       value: Car1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7693642549830490054, guid: 1325f4d1ef31e564698bb4bdb22780e1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1325f4d1ef31e564698bb4bdb22780e1, type: 3}
