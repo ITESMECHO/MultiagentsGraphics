@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrafficLight : MonoBehaviour
+public class TrafficLightHandler : MonoBehaviour
 {
     [SerializeField] int _status;
     /*For all the arrays there is the following order:
@@ -15,13 +15,7 @@ public class TrafficLight : MonoBehaviour
     [SerializeField] Material[] _lightMaterialsON;
     [SerializeField] Material[] _lightMaterialsOFF;
 
-
-    void Update()
-    {
-        On(_status);
-    }
-
-    void On(int lightNumber)
+    public void On(int lightNumber)
     {
         for(int i = 0; i < 3; i++)
         {

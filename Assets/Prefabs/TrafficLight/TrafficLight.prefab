@@ -6688,7 +6688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8441600577249995163}
-  - component: {fileID: 8441600577249995162}
+  - component: {fileID: 8441600577274123273}
   m_Layer: 0
   m_Name: TrafficLight
   m_TagString: Untagged
@@ -6711,7 +6711,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8441600577249995162
+--- !u!114 &8441600577274123273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
