@@ -13,8 +13,10 @@ public class CarpoolManager : MonoBehaviour
     private Queue<GameObject> _pool;
     [SerializeField] private GameObject[] _carModels;
     [SerializeField] private int _poolSize = 20;
+    [SerializeField] GameObject _parser;
 
-    private void Awake()
+    //This is called by a event on Parser (carsAmountParsed)
+    public void GenerateCarPool(int poolSize)
     {
         if(Instance != null)
         {
@@ -22,6 +24,10 @@ public class CarpoolManager : MonoBehaviour
             return;
         }
 
+        if(poolSize != 0)
+        {
+            _poolSize = poolSize;
+        }
         Instance = this;
         _pool = new Queue<GameObject>();
         for(int i = 0; i < _poolSize; i++)
@@ -31,7 +37,6 @@ public class CarpoolManager : MonoBehaviour
             newCar.SetActive(false);
         }
     }
-
     public GameObject ActivateObject(Vector3 pos)
     {
         if(_pool.Count == 0 || _pool == null)

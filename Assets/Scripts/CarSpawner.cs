@@ -15,7 +15,7 @@ public class CarSpawner : MonoBehaviour
         _carsExecution = new GameObject[cars.Length];
         for (int i = 0; i < cars.Length; i++)
         {
-            
+            Car currentCar = cars[i];
             if (i < 10)
             {
                 _carsExecution[i] = CarpoolManager.Instance.ActivateObject(
