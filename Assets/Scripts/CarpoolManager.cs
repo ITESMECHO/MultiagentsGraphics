@@ -11,7 +11,7 @@ public class CarpoolManager : MonoBehaviour
     }
 
     private Queue<GameObject> _pool;
-    [SerializeField] private GameObject _car;
+    [SerializeField] private GameObject[] _carModels;
     [SerializeField] private int _poolSize = 20;
 
     private void Awake()
@@ -26,7 +26,7 @@ public class CarpoolManager : MonoBehaviour
         _pool = new Queue<GameObject>();
         for(int i = 0; i < _poolSize; i++)
         {
-            GameObject newCar = Instantiate<GameObject>(_car);
+            GameObject newCar = Instantiate<GameObject>(_carModels[Random.Range(0, _carModels.Length)]);
             _pool.Enqueue(newCar);
             newCar.SetActive(false);
         }
