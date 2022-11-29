@@ -3344,7 +3344,7 @@ MonoBehaviour:
   - {fileID: 2496201162760251734, guid: ae503597b085d3341bcda4063da14907, type: 3}
   - {fileID: 8755837301249374003, guid: 4740d9a375fac204dbba49e3e7253472, type: 3}
   - {fileID: 9218950260554662364, guid: 894a8a411bee7ad4eadd677343b3711f, type: 3}
-  _poolSize: 1
+  _poolSize: 20
   _parser: {fileID: 372493261}
 --- !u!4 &217694067
 Transform:
