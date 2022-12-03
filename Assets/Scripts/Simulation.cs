@@ -25,6 +25,38 @@ public class Simulation : MonoBehaviour
         _corSimulation = StartCoroutine(Steps());
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            _stepRate = 0.015f;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            _stepRate = 0.02f;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            _stepRate = 0.05f;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            _stepRate = 0.1f;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            _stepRate = 1f;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            _stepRate = 0.01f;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            _stepRate = 0.005f;
+        }
+    }
+
     IEnumerator Steps()
     {
         yield return new WaitForSeconds(_delay);
