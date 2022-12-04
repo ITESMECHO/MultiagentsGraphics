@@ -8,6 +8,7 @@ public class CarSpawner : MonoBehaviour
     [SerializeField] public float _ratio = 15;
     [SerializeField] float _offset = 10;
     [SerializeField] float _offsetStreet = 0.15f;
+    private Vector3 _directions;
     private GameObject[] _carsExecution;
     bool spawned = false;
 
